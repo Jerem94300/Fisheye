@@ -1,0 +1,89 @@
+
+
+export const MainPhotographe = (data) => {
+  console.log(data);
+  // console.log(NewData);
+
+  let photographCard = "";
+
+
+
+    photographCard += `
+
+      <div class="card__photographe">
+        <div class="name__location">
+            <div class="name">${data.name}</div>
+            <div class="location__photograph">
+            <div class="town">${data.city}</div>
+            <div class="country">${data.country}</div>
+          </div>
+        <div class="description__photographe">${data.tagline}</div>
+        </div>
+        <div class="btn__contact">
+        <button class="btn__contact">Contactez-moi</button>
+        </div>
+        <div class="picture__photographe">
+        <img class="picture__item" src="/assets/images/photographers/thumbnails/${data.portrait}" alt="">
+      </div>
+
+    `;
+
+  return `
+<div class="container">
+     <main class="main">
+
+     ${photographCard}
+
+      </main>
+       <div class="filter">
+      <p class="text__filter">Trier par</p>
+      <div class="block__filter"></div>
+      </div>
+  </div>
+
+  
+
+
+`;
+};
+
+export const MainPhotographeGrid = ( NewData, data) => {
+  const blockGrid = document.querySelector('.block__grid')
+  let cardMiniature = "";
+  console.log(NewData);
+  console.log(data);
+  
+
+
+ NewData.forEach((element) => {  
+
+    cardMiniature += `
+
+    <div class="photos__small__block">
+       <div class="card__small__picture">
+         <img
+           src="/assets/images/photographers/samplePhotos-Small/${data.name}/${NewData.image}"
+           alt=""
+           class="picture__small__item"
+         />
+         <div class="block__legend">
+           <div class="picture__legend">${NewData.title}</div>
+           <div class="like__block">
+             <div class="number__like">${NewData.likes}</div>
+             <div class="like__image"><i class="fa-solid fa-heart heart"></i></div>
+           </div>
+         </div>
+       </div>
+
+   
+   
+   `;
+
+   return `
+   ${cardMiniature}
+      
+   `
+  });
+
+  
+};
