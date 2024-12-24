@@ -434,6 +434,11 @@ input{
   transition: visibility 0s, opacity 0.3s;
 }
 
+.hidden {
+  display: none !important; /* Cache complètement l'élément */
+}
+
+
 .lightbox.visible {
   visibility: visible;
   opacity: 1;
@@ -451,6 +456,16 @@ input{
   height: auto;
   border-radius: 8px;
 }
+
+/* Lightbox - Vidéo */
+.lightbox__video {
+  width: 100%;
+  height: auto;
+  max-height: 80%;
+  border-radius: 8px;
+  display: block; /* S'assure que la vidéo est affichée */
+}
+
 
 /* Lightbox buttons */
 .lightbox__close,

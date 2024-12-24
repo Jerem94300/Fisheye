@@ -1,8 +1,9 @@
 import { Header } from "./Header.js";
 import { getPhotographById, getMediaById } from "../utils/Api.js";
 import { MainPhotographe } from "./MainPhotographe.js";
+import { createLightbox,enableLightbox } from "./lightbox.js";
 import { Modal, modalIn } from "./modal.js";
-import { createLightbox, enableLightbox } from "./lightbox.js";
+
 
 export const displayData = (data, dataMedia) => {
   const body = document.querySelector("body");
@@ -22,7 +23,8 @@ export const displayData = (data, dataMedia) => {
   
     `;
     modalIn(data);
-    createLightbox(data, dataMedia);
+    createLightbox(data, dataMedia)
+
     enableLightbox(data, dataMedia)
    
 
