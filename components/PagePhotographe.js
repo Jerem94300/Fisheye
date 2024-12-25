@@ -1,5 +1,5 @@
 import { Header } from "Header.js";
-import { getPhotographById, getMediaById } from "utils/Api.js";
+import { getPhotographById, getMediaById } from "../utils/Api.js";
 import { MainPhotographe } from "MainPhotographe.js";
 import { createLightbox,enableLightbox } from "lightbox.js";
 import { Modal, modalIn } from "modal.js";

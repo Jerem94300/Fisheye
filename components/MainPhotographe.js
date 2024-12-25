@@ -1,4 +1,4 @@
-import { getPhotographById, getmedias, getMediaById } from "utils/Api.js";
+import { getPhotographById, getmedias, getMediaById } from "../utils/Api.js";
 import { Dropdown } from "Dropdown.js";
 
 export const MainPhotographe = (data, dataMedia) => {
