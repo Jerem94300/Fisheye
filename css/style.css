@@ -589,10 +589,10 @@ input {
 
   .modal {
     width: 85%;
-    height: 70%;
+    height: 90%;
     position: fixed;
 
-    top: 20%;
+    top: 5%;
     left: 10%;
   }
 
