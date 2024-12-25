@@ -370,7 +370,7 @@ row-gap: 4rem;
 /*----------- modal----------------- */
 
 .modal{
-  width: 669px;
+  width: 40rem;
   height: auto;
   background-color: #DB8876;
   opacity: 0.95;
@@ -383,6 +383,7 @@ row-gap: 4rem;
   z-index: 1000;
   justify-self: center;
   align-self: center;
+  align-items: center;
   top: 20%;
   left: 30%;
 
@@ -394,7 +395,7 @@ row-gap: 4rem;
 
 
 .modal__block__name{
-  font-size: 64px;
+  font-size: 4rem;
   padding: 2rem;
 
 
@@ -418,20 +419,21 @@ row-gap: 4rem;
 
 
 label{
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   color: #312E2E;
 }
 
 input{
-  width: 600px;
-  height: 68px;
+  width: 35rem;
+  height: 4rem;
   border-radius: 5px;
   border: none;
 }
 
 #textarea{
-  height: 170px;
+  width: 35rem;
+  height: 10rem;
   border-radius: 5px;
   border: none;
 }
