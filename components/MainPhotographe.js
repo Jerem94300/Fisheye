@@ -31,7 +31,7 @@ export const MainPhotographe = (data, dataMedia) => {
         <button class="btn__contact">Contactez-moi</button>
         </div>
         <div class="picture__photographe">
-        <img class="picture__item" src="./assets/images/photographers/thumbnails/${data.portrait}" alt="">
+        <img class="picture__item" src="assets/images/photographers/thumbnails/${data.portrait}" alt="">
         </div>
       </div>
 
@@ -63,9 +63,9 @@ export const MainPhotographe = (data, dataMedia) => {
     if (element.video) {
       photographeGrid += `
         <div class="card__small__video">
-          <video poster="./assets/images/photographers/samplePhotos-Small/${data.name}/${element.image}" autoplay muted loop>
-            <source class="video__content" src="./assets/images/photographers/samplePhotos-Small/${data.name}/${element.video}" type="video/mp4">
-            <source class="video__content" src="./assets/images/photographers/samplePhotos-Small/${data.name}/${element.video.replace('.mp4', '.webm')}" type="video/webm">
+          <video poster="assets/images/photographers/samplePhotos-Small/${data.name}/${element.image}" autoplay muted loop>
+            <source class="video__content" src="assets/images/photographers/samplePhotos-Small/${data.name}/${element.video}" type="video/mp4">
+            <source class="video__content" src="assets/images/photographers/samplePhotos-Small/${data.name}/${element.video.replace('.mp4', '.webm')}" type="video/webm">
             Votre navigateur ne supporte pas la vidéo.
           </video>
            <div class="block__legend">
@@ -81,7 +81,7 @@ export const MainPhotographe = (data, dataMedia) => {
       photographeGrid += `
         <div class="card__small__picture">
           <img
-            src="./assets/images/photographers/samplePhotos-Small/${data.name}/${element.image}"
+            src="assets/images/photographers/samplePhotos-Small/${data.name}/${element.image}"
             alt="${element.title}"
             class="picture__small__item"
           />
