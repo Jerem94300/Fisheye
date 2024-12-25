@@ -152,8 +152,48 @@ export const filterUse = () => {
     console.log("click sur Date");
   });
 
-  // Gestion des clics sur "Titre"
-  filterTitle.addEventListener("click", function () {
-    console.log("click sur Titre");
-  });
+  
 };
+
+
+// export const likesManagement = (dataMedia) => {
+
+//   const numberLikes = document.querySelectorAll('.number__like');
+//   const heartLikes = document.querySelectorAll('.like__image');
+
+
+
+//   heartLikes.forEach((element) => {
+//   addEventListener('click', () => {
+
+//     console.log("click ok");
+    
+
+
+
+//   })
+// })
+//   console.log(dataMedia);
+//   let countLikes = "";
+
+//   dataMedia.forEach((element) => {
+
+//     if (element.likes) {
+//       countLikes++
+      
+//     }
+//     console.log(countLikes);
+    
+
+
+
+
+//   })
+  
+  
+
+
+
+
+
+// }

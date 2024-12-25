@@ -475,6 +475,19 @@ input {
   transform: translateY(-50%);
 }
 
+/*--------------------gestion likes------------------- */
+
+.like__image{
+  cursor: pointer;
+
+}
+
+.like__image:hover{
+  opacity: 50%;
+
+}
+
+
 @media screen and (max-width: 700px) {
   header {
     width: 100%;
