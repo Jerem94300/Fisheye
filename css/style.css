@@ -186,8 +186,10 @@ header{
 }
 
 .block__filter{
+  position: relative;
+  left: 250px;
   width: 179px;
-  height: 69px;
+  height: 70px;
   background-color: #901C1C;
   color: white;
   border-radius: 5px;
@@ -196,37 +198,77 @@ header{
   font-size: 18px;
   justify-content: space-evenly;
   align-items: center;
-
-
+  cursor: pointer;
+  
 }
+
 .block__popular{
   display: flex;
+  cursor: pointer;
   gap: 2rem;
   
 }
 
-.block__date{
-
-  border-top: 1px solid #DB8876;
-  
+.chevron__up {
+  display: none; /* Visible seulement si le dropdown est ouvert */
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.block__date{
 
-  border-top: 1px solid #DB8876;
-  
+
+/* Chevron bas */
+.chevron__down {
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.block__date, .block__titre{
+
+
+
+
+
+.dropdown__content {
+  position: absolute;
+  top: 100%; /* Juste sous le conteneur principal */
+  left: 0;
+  width: 100%; /* Occupe toute la largeur */
+  height: 0; /* Caché par défaut */
+  overflow: hidden; /* Empêche les débordements */
+  background-color: #400000; /* Couleur de fond */
+  transition: height 0.3s ease; /* Animation fluide */
+  z-index: 10; /* Passe au-dessus des autres éléments */
+}
+
+
+.dropdown__content.show {
+  height: 120px; /* Hauteur cible (ajustez si nécessaire) */
+}
+
+
+
+
+
+.block__date{
   display: none;
+  width: 100%;
+  margin-left: 2rem;
 }
 
-.block__filter__affichage{
-  display: block;
-  width: 170px;
-  height: 170px;
-
+.block__titre{
+  display: none;
+  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  
 }
+
+hr{
+  display: none;
+  width: 80%;
+  
+}
+
 
 
 
@@ -282,6 +324,7 @@ row-gap: 4rem;
 .block__legend{
   display: flex;
   justify-content: space-between;
+  max-width: 350px;
 
 
 }
@@ -315,10 +358,14 @@ row-gap: 4rem;
 /* videos */
 
 .card__small__video video{
-  width: 350px;
-  height: 350px;
+  width: 350px !important;
+  height: 300px !important;
+  object-fit: cover !important;
 
 }
+
+
+
 
 /*----------- modal----------------- */
 

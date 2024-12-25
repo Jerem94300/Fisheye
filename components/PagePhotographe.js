@@ -3,6 +3,7 @@ import { getPhotographById, getMediaById } from "../utils/Api.js";
 import { MainPhotographe } from "./MainPhotographe.js";
 import { createLightbox,enableLightbox } from "./lightbox.js";
 import { Modal, modalIn } from "./modal.js";
+import { filterUse } from "./MainPhotographe.js";
 
 
 export const displayData = (data, dataMedia) => {
@@ -24,8 +25,8 @@ export const displayData = (data, dataMedia) => {
     `;
     modalIn(data);
     createLightbox(data, dataMedia)
-
     enableLightbox(data, dataMedia)
+    filterUse();
    
 
 
