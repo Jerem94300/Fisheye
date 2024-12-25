@@ -1,5 +1,5 @@
 // Importation des modules
-import { getPhotographById, getMediaById } from "/utils/Api.js";
+import { getPhotographById, getMediaById } from "utils/Api.js";
 
 // Fonction pour créer la Lightbox
 export const createLightbox = (data, dataMedia) => {

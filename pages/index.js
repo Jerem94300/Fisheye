@@ -1,6 +1,6 @@
-import { getPhotographes, getmedias } from "/utils/Api.js";
-import { Header } from "/components/Header.js";
-import { Main } from "/components/Main.js";
+import { getPhotographes, getmedias } from "utils/Api.js";
+import { Header } from "components/Header.js";
+import { Main } from "components/Main.js";
 
 
 const displayData = (data, NewData) => {
