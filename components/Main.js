@@ -1,4 +1,4 @@
-import { getPhotographById, getMediaById } from "../utils/Api.js";
+import { getPhotographById, getMediaById } from "/utils/Api.js";
 
 export const Main = (data, NewData) => {
   // console.log(data);
