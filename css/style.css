@@ -44,13 +44,14 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   row-gap: 4rem;
-  margin-left: 6rem;
 }
 
 .card__content {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  text-align: center;
 }
 
 .card__picture {
@@ -148,7 +149,6 @@ header {
   margin-bottom: 1rem;
 }
 
-
 /* ----------------------Filtre----------------- */
 .filter {
   display: flex;
@@ -185,7 +185,6 @@ header {
   color: white;
   text-decoration: none;
 }
-
 
 .block__popular {
   display: flex;
@@ -254,7 +253,6 @@ hr {
   column-gap: 2rem;
   row-gap: 4rem;
 }
-
 
 .card__small__picture {
   width: 350px;
@@ -549,19 +547,21 @@ input {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
-
-
-  
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
   .filter {
     display: flex;
     flex-direction: column;
     height: 200px;
   }
-
-
 
   .text__filter {
     height: 50px;
@@ -573,8 +573,6 @@ input {
     width: 170px;
     margin-bottom: 1rem;
   }
-  
-  
 
   .grid__content {
     display: flex;
@@ -628,4 +626,39 @@ input {
     width: 170px;
     height: 70px;
   }
+
+
+
+
+
+  /* modal */
+
+  .modal {
+    /* transition: all 0.25s ease-out; */
+    z-index: 1000;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    top: 5%;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .form__control {
+    width: 100%;
+    height: 3rem;
+  }
+
+  #textarea {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .button__send {
+    width: 100%;
+    height: 3rem;
+  }
+  
 }
