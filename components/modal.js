@@ -3,10 +3,16 @@ export const Modal = (data) => {
     
     return`
       <div class="modal">
+      <div class="modal__header">
             <div class="modal__block__name">
                 <h1 class="modal__title">Contactez-moi</h1>
                 <h2 class="modal__name">${data.name}</h1>
             </div>
+            <div class="cross__escape">
+                <i class="fa-regular fa-circle-xmark cross__item"></i>
+            </div>
+        </div>
+
 
 
             <form action="" class="form">
@@ -56,6 +62,12 @@ export const modalIn = () => {
         
 
 
+    })
+
+    const cross = document.querySelector('.cross__escape');
+
+    cross.addEventListener('click',() => {
+        modal.style.display = "none"
     })
 
 
