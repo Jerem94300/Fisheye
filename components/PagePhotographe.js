@@ -4,6 +4,7 @@ import { MainPhotographe } from "./MainPhotographe.js";
 import { createLightbox,enableLightbox } from "./lightbox.js";
 import { Modal, modalIn } from "./modal.js";
 import { filterUse } from "./MainPhotographe.js";
+import { Footer } from "./footer.js";
 
 
 export const displayData = (data, dataMedia) => {
@@ -17,6 +18,7 @@ export const displayData = (data, dataMedia) => {
 
      ${Header()}
      ${MainPhotographe(data, dataMedia)}
+     ${Footer()}
 
         </div>
 
